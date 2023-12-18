@@ -51,6 +51,7 @@ Join our vibrant community forum or reach out to Team Indie for assistance, disc
 
 Special Thanks To Contributors/Developers
 @Nova @Zeck @Anay
+`( Happy Skidding! )`
 
 
 
