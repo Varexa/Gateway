@@ -1,5 +1,5 @@
 # Gateway Source Code
-Gateway, originally conceived as a versatile bot by Indie HQ, encountered discontinuation due to a decline in developer interest, ultimately leading to its closure. Recognizing the substantial educational value embedded in its source code, the esteemed members of Team Indie have made the commendable decision to release it to the public, fostering a collaborative learning environment.
+Gateway, originally conceived as a versatile bot by Indie HQ, encountered discontinuation due to a decline in developer interest, ultimately leading to its closure.
 
 ## Deployment Instructions
 
