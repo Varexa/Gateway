@@ -1,4 +1,4 @@
-# Gateway Source Code
+# Gateway Discord Bot Source Code
 Gateway, originally conceived as a versatile bot by Indie HQ, encountered discontinuation due to a decline in developer interest, ultimately leading to its closure.
 
 ## Deployment Instructions
