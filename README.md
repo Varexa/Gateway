@@ -53,7 +53,7 @@ Feel free to contribute to the project by submitting pull requests. Refer to the
 Join our vibrant community forum or reach out to Team Indie for assistance, discussions, and collaborative opportunities.
 
 Special Thanks To Contributors/Developers
-@Nova @Zeck @Anay @DREXYOP
+@Nova @Zeck @Anay
 `( Happy Skidding! )` 
 > Learn to code bruh
 
