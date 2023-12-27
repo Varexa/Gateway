@@ -7,16 +7,19 @@ Gateway, originally conceived as a versatile bot by Indie HQ, encountered discon
 `pip install -r requirements.txt`
 
 **Token Configuration:**
-Insert your token in "main.py" at line 216.
+Insert your token in "main.py" at line 643.
 
 **API Keys:**
 Ensure you possess API keys for:
-`OpenAI`
-`Spotify`
+- `OpenAI`- `Line- 28 At cogs/general.py`
+- `Google` - `Line 29 At cogs/general.py`
+- `Google API CX` - `Line 30 At cogs/general.py`
+- `Spotify`- `Idk, find it out`
 
 **Database Setup:**
 Create an SQLite database by navigating to the "database" folder and executing the SQL script:
 `sqlite3 -init database.sql`
+>create an portgress sql db and put the connection like in main.py - line 379
 
    
 Make sure to adjust the database path in the code to match your setup.
@@ -50,9 +53,11 @@ Feel free to contribute to the project by submitting pull requests. Refer to the
 Join our vibrant community forum or reach out to Team Indie for assistance, discussions, and collaborative opportunities.
 
 Special Thanks To Contributors/Developers
-@Nova @Zeck @Anay
-`( Happy Skidding! )`
+@Nova @Zeck @Anay @DREXYOP
+`( Happy Skidding! )` 
+> Learn to code bruh
 
 
 
-Note: The commitment to open-source values and the promotion of learning remain at the core of this initiative. Let's build and learn together! 🚀
+*Note*: The commitment to open-source values and the promotion of learning remain at the core of this initiative. Let's build and learn together! 🚀
+Any kind of usage of this repo should include proper credits to the original repo and its developers .

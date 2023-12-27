@@ -907,7 +907,7 @@ class extra(commands.Cog):
                 em = discord.Embed(description=f"<:error:1153009680428318791>You must Have Higher Role than Bot To run This Command", color=0xff0000)
                 return await ctx.send(embed=em)
         if not ctx.guild.me.guild_permissions.administrator:
-            return await ctx.reply(embed=discord.Embed(description="Gatewaylacks certain permissions to run this function properly kindly refer to [our documentation for more](https://docs.gatewaybot.xyz/faqs/#gateway-lacks-certain-permissions-to-run-this-function-properly)", color=0xc283fe))
+            return await ctx.reply(embed=discord.Embed(description="Gateway lacks certain permissions to run this function properly kindly refer to [our documentation for more](https://docs.gatewaybot.xyz/faqs/#gateway-lacks-certain-permissions-to-run-this-function-properly)", color=0xc283fe))
         with sqlite3.connect('database.sqlite3') as db1:
             db1.row_factory = sqlite3.Row
             cursor1 = db1.cursor()

@@ -25,6 +25,12 @@ from wavelink.ext import spotify
 import openai
 import re
 
+openai.api_key = "OPENAI_API_KEY"
+google_key = "GOOGLE_API_KEY" 
+cx = "GOOGLE_API_CX"
+dr = {"Music": "<a:musical:1152999917724385421>",
+      "General": "<:help:1152981730458878075>"}
+
 def identify_code_language(code):
     # Define regular expressions for common programming languages
     languages = {
@@ -47,11 +53,7 @@ def identify_code_language(code):
             return i.lower()
     return None
 
-openai.api_key = "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"
-google_key = "AIzaSyBHuEaTZ18Is8CiR1P_iij4ltSrKdmT6A0"
-cx = "fa4d8703bfda53ae4"
-dr = {"Music": "<a:musical:1152999917724385421>",
-      "General": "<:help:1152981730458878075>"}
+
 class BasicView(discord.ui.View):
     def __init__(self, ctx: commands.Context, timeout = 60):
         super().__init__(timeout=timeout)
@@ -1981,7 +1983,7 @@ class general(commands.Cog):
         """Simple google search Engine"""
         search = urllib.parse.quote(search)
 
-        url = f"https://www.googleapis.com/customsearch/v1?key=AIzaSyBHuEaTZ18Is8CiR1P_iij4ltSrKdmT6A0&cx=786c5664fab118c39&q={search}"
+        url = f"https://www.googleapis.com/customsearch/v1?key={google_key}&cx={cx}&q={search}"
         async with requests.Session() as session:
             async with session.get(url) as response:
                 if response.status == 200:
