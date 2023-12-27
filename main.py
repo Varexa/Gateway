@@ -376,7 +376,7 @@ class Bot(commands.AutoShardedBot):
 
     #self.sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
     #self.spotify = sc
-    self.conn = await asyncpg.connect('postgres://mfsjswgw:yz-JpViH_pE4AlcwS6ceyrbATnDRzMyL@ruby.db.elephantsql.com/mfsjswgw')
+    self.conn = await asyncpg.connect('postgres_connection_url')
     await create_table(self.conn)
 
     #await wavelink.NodePool.connect(client=self, nodes=[node], spotify=sc)
@@ -494,7 +494,7 @@ async def on_message(message: discord.Message) -> None:
         emb = discord.Embed(description=f"Hey {message.author.mention} My prefix for this guild is `{prefix}`\nTo view all my modules and commands use `{prefix}help` or </help:1063005466914979900>.\nFor specific module related help use `{prefix}help <module name>` or </help:1063005466914979900> `<module name>`", color=0xc283fe)
         page = discord.ui.View()
         page.add_item(discord.ui.Button(label="Invite me", url=discord.utils.oauth_url(bot.user.id)))
-        page.add_item(discord.ui.Button(label="Support Server", url="https://discord.gg/wb4UCU3m5z"))
+        page.add_item(discord.ui.Button(label="Support Server", url="https://discord.gg/6Q9D7R8hYc"))
         page.add_item(discord.ui.Button(label="Vote", url="https://top.gg/bot/880765863953858601/vote"))
         page.add_item(discord.ui.Button(label="Website", url="https://gatewaybot.xyz/"))
         await ctx.reply(embed=emb, mention_author=False, view=page)
@@ -640,4 +640,4 @@ async def on_message_edit(before: discord.Message, after: discord.Message):
 
 #mai toh papa hu iss duniya ka papa geek nova toh papa coder hai Anay Hijda lode pe 
 
-bot.run('')
+bot.run('Token')

@@ -371,7 +371,7 @@ async def create_table(conn):
 
 if __name__ == "__main__":
     async def xd():
-        conn = await asyncpg.connect('postgres://mfsjswgw:yz-JpViH_pE4AlcwS6ceyrbATnDRzMyL@ruby.db.elephantsql.com/mfsjswgw')
+        conn = await asyncpg.connect('postgres_uri')
         await create_table(conn)
         query = 'SELECT * FROM  "247" WHERE guild_id=1036594185442177055'
         i = await conn.fetchall(query)
